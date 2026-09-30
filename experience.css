@@ -16,15 +16,14 @@
 
     nav .logo { color: #38bdf8;
          font-weight: 700;
-          font-size: 1.25rem; }
+       font-size: 1.25rem;
+        flex-shrink: 0;
+         white-space: nowrap; }
 
     nav .links a { color: #e2e8f0;
          text-decoration: none; 
          margin-left: 0;
          font-weight: 500; }
-
-    nav .logo { flex-shrink: 0;
-         white-space: nowrap; }
 
     nav .links { display: flex;
          flex-wrap: wrap;
