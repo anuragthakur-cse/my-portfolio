@@ -21,9 +21,17 @@
 
     nav .links a { color: #e2e8f0;
          text-decoration: none;
-          margin-left: 1.5rem;
+          margin-left: 0;
            font-weight: 500;
             transition: color 0.2s; }
+
+    nav .logo { flex-shrink: 0;
+         white-space: nowrap; }
+
+    nav .links { display: flex;
+         flex-wrap: wrap;
+          justify-content: flex-end;
+           gap: 0.5rem 1.25rem; }
 
     nav .links a:hover, nav .links a.active { color: #38bdf8; }
 
@@ -75,3 +83,17 @@
 
     .contact-bar a { color: #0284c7;
          text-decoration: none; }
+
+    @media (max-width: 600px) {
+        nav { flex-direction: column;
+             align-items: flex-start;
+              gap: 0.75rem;
+               padding: 1rem 1.25rem; }
+
+        nav .links { justify-content: flex-start; }
+
+        .container { margin: 2rem auto;
+             padding: 0 1rem; }
+
+        .hero { padding: 2rem 1.25rem; }
+    }
